@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+<div class="note-list">
+  <% if(notes.length!=0){%>
+  <ul>
+    <% notes.forEach(note => { %>
+    <li>
+      <div class="note">
+        <h3><%= note.title %></h3>
+        <p><%= note.content.substring(0,99) %> ...</p>
+        <a href="/read-more/<%= note.title %>">Read More</a>
+        <a href="/edit-note/<%= note.title %>">Edit</a>
+        <a href="/delete-note/<%= note.title %>">Delete</a>
+      </div>
+    </li>
+    <% }); %>
+  </ul>
+  <% } else { %>
+  <p>No notes found.</p>
+  <% } %>
+</div>
+
+<%- include("partials/footer.ejs") %>

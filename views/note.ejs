@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="note">
+      <h3><%= note.title %></h3>
+      <p><%= note.content%></p>
+    </div>
+    <a href="/">Go Back</a>
+    <a href="/edit-note/<%= note.title %>">Edit</a>
+    <a href="/delete-note/<%= note.title %>">Delete</a>
+
+<%- include("partials/footer.ejs") %>

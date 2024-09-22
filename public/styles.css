@@ -1,0 +1,39 @@
+body {
+  width: 80vw;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+.nav-links {
+  width: 40%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h2 {
+  text-align: center;
+}
+.note-form {
+  width: 50%;
+  height: 25%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+}
